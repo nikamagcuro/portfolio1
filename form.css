@@ -1,0 +1,416 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(226, 240, 234);
+    letter-spacing: 0.1vw;
+}
+
+/* Navigation Style */
+.logo {
+    width: 6vw;
+    position: absolute;
+    z-index: 3;
+    margin-left: 3vw;
+    margin-top: 0.8vw;
+    position: fixed;
+    box-shadow: .3vw .1vw .5vw .2vw rgba(0, 0, 0, 0.247);
+    border-radius: 100px;
+}
+
+.head-link {
+    position: relative;
+    display: inline-block;
+    font-size: 1.3vw;
+    text-decoration: none;
+    margin-left: 3vw;
+    color: rgb(19, 59, 26);
+    padding-bottom: .3vw;
+
+}
+
+a:hover {
+    color: rgb(59, 170, 109);
+    transform: translateY(-2px);
+    transition: all 0.4s ease-in-out;
+}
+
+.head-nav {
+
+    text-align: center;
+    position: fixed;
+    top: 0;
+    padding: 1vw 0vw;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    z-index: 2;
+}
+
+/*Forms*/
+
+form {
+
+    display: block;
+    position: absolute;
+    font-size: 1.3vw;
+    margin: 10vw 15vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], select {
+
+    width: 60vw;
+    padding: 1vw;
+    margin: 1vw 0vw 2vw 0vw;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    border: 0.25vw solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 0.25vw solid #555;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    font-size: 1.3vw;
+}
+
+input[type=number], select {
+    width: 60vw;
+    padding: 1vw;
+    margin: 1vw 0vw 2vw 0vw;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    border: 0.25vw solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=number]:focus {
+    border: 0.25vw solid #555;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    font-size: 1.3vw;
+}
+
+#age {
+    width: 18vw;
+
+    font-size: 1.3vw;
+}
+
+#bday {
+    width: 15vw;
+    font-size: 1.3vw;
+}
+
+input[type=date], select {
+
+    padding: 1vw;
+    margin: 1vw 0vw 2vw 0vw;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    border: 0.25vw solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=date]:focus {
+    border: 0.25vw solid #555;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    font-size: 1.3vw;
+}
+
+
+fieldset {
+    margin: 3vw;
+    padding: 2vw 2vw;
+    border: none;
+    box-shadow: 0.6vw 0.9vw 0vw .2vw rgb(17, 17, 17);
+    background-color: rgb(209, 224, 218);
+}
+
+legend {
+    background-color: rgb(197, 240, 221);
+    padding: 1vw;
+    font-size: 2vw;
+    box-shadow: 0.5vw 0.4vw 0vw .2vw rgb(17, 17, 17);
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#add {
+    margin: 2vw 0vw;
+}
+
+
+.button {
+
+    text-align: center;
+
+}
+
+#btn {
+    border: none;
+    font-size: 2vw;
+    padding: 1vw 4vw;
+    margin: 3vw 0vw 5vw 0vw;
+    background-color: rgb(252, 189, 205);
+}
+
+#btn:hover {
+    background-color: rgb(159, 216, 190);
+    transition: all 0.3s ease-in-out;
+
+}
+
+#btn:active {
+    background-color: rgb(231, 117, 145);
+
+}
+
+@media screen and (min-width:360px) {
+
+
+    .logo {
+        width: 15vw;
+        position: absolute;
+        top: 0;
+        position: fixed;
+    }
+
+    .head-link {
+        font-size: 3vw;
+    }
+
+    .head-nav {
+        padding: 6vw 0vw;
+
+    }
+
+    form {
+
+
+        position: relative;
+        font-size: 4vw;
+        margin: 20vw 0vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    fieldset {
+        margin: 10vw 0vw 0vw 0vw;
+        box-shadow: none;
+        background-color: rgb(226, 240, 234);
+    }
+
+    legend {
+        background-color: rgb(197, 240, 221);
+        padding: 2vw;
+        box-shadow: none;
+        text-align: center;
+        font-size: 2vh;
+        margin-bottom: 5vw;
+
+    }
+
+
+
+    input[type=text], input[type=number], input[type=date], select {
+        padding: 3vw;
+        font-size: 4vw;
+        width: 95vw;
+        margin: 3vw 0vw 5vw 0vw;
+    }
+
+    input[type=radio] {
+        margin: 3vw 0vw 5vw 0vw;
+
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        font-size: 4vw;
+    }
+
+
+    #add {
+        margin: 5vw 0vw;
+
+    }
+
+
+
+    .new::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+
+    #age {
+        width: 95vw;
+
+        font-size: 4vw;
+    }
+
+    #bday {
+        width: 95vw;
+        font-size: 4vw;
+    }
+
+    #btn {
+        padding: 4vw 15vw;
+        font-size: 5vw;
+
+    }
+}
+
+@media screen and (min-width:900px) {
+    .logo {
+        width: 6vw;
+
+    }
+
+    .head-link {
+        font-size: 1.3vw;
+
+    }
+
+    .head-nav {
+
+        padding: 1vw 0vw;
+
+    }
+
+    /*Forms*/
+
+    form {
+
+
+        position: absolute;
+        font-size: 1.3vw;
+        margin: 10vw 15vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type=text], select {
+
+        width: 60vw;
+        padding: 1vw;
+        margin: 1vw 0vw 2vw 0vw;
+        font-size: 1.2vw;
+
+    }
+
+    input[type=text]:focus {
+        border: 0.25vw solid #555;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        font-size: 1.3vw;
+    }
+
+    input[type=number], select {
+        width: 60vw;
+        padding: 1vw;
+        margin: 1vw 0vw 2vw 0vw;
+        font-size: 1.2vw;
+
+    }
+
+    input[type=number]:focus {
+        border: 0.25vw solid #555;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        font-size: 1.3vw;
+    }
+
+    input[type=date], select {
+
+        padding: 1vw;
+        margin: 1vw 0vw 2vw 0vw;
+        font-size: 1.2vw;
+
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        font-size: 1.3vw;
+    }
+
+
+    fieldset {
+        margin: 3vw;
+        box-shadow: 0.6vw 0.9vw 0vw .2vw rgb(17, 17, 17);
+        background-color: rgb(209, 224, 218);
+
+    }
+
+    legend {
+        padding: 1vw;
+        margin: 0;
+        font-size: 2vw;
+    }
+
+
+
+    #add {
+        margin: 2vw 0vw;
+
+    }
+
+
+
+    .new::after {
+        content: "";
+
+    }
+
+
+    #age {
+        width: 18vw;
+
+        font-size: 1.3vw;
+    }
+
+    #bday {
+        width: 15vw;
+        font-size: 1.3vw;
+    }
+
+
+    .button {
+
+        text-align: center;
+
+    }
+
+    #btn {
+        font-size: 2vw;
+        padding: 1vw 4vw;
+    }
+
+}

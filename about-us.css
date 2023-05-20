@@ -1,0 +1,465 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    letter-spacing: 0.vw;
+
+}
+
+/* Navigation Style */
+.logo {
+    width: 6vw;
+    position: absolute;
+    z-index: 3;
+    margin-left: 3vw;
+    margin-top: 0.8vw;
+    position: fixed;
+    box-shadow: .3vw .1vw .5vw .2vw rgba(0, 0, 0, 0.247);
+    border-radius: 100px;
+}
+
+.head-link {
+    position: relative;
+    display: inline-block;
+    font-size: 1.3vw;
+    text-decoration: none;
+    margin-left: 3vw;
+    color: rgb(19, 59, 26);
+    padding-bottom: .3vw;
+
+}
+
+a:hover {
+    color: rgb(59, 170, 109);
+    transform: translateY(-2px);
+    transition: all 0.4s ease-in-out;
+}
+
+.head-nav {
+
+    text-align: center;
+    position: fixed;
+    top: 0;
+    padding: 1vw 0vw;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    z-index: 2;
+}
+
+/*slide-show*/
+.slide-show {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    animation: slide 30s infinite;
+    background-size: cover;
+
+}
+
+
+@keyframes slide {
+    0% {
+        background-image: url(images/slide-1.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+
+    20% {
+        background-image: url(images/slide-2.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    40% {
+        background-image: url(images/slide-3.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    60% {
+        background-image: url(images/slide-4.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    80% {
+        background-image: url(images/slide-5.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    100% {
+        background-image: url(images/slide-6.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+}
+
+/*Article*/
+
+
+.text {
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8vw 10vw 0vw 10vw;
+    height: 100vh;
+}
+
+.text>p {
+    text-align: justify;
+    font-size: 1.3vw;
+}
+
+.text>.heading {
+    text-align: center;
+    font-size: 3vw
+}
+
+.parallax {
+    background-image: url(images/campus.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.icon-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 8vw;
+
+}
+
+.icons {
+    text-align: center;
+    margin: 20vh 7vh 0vh 7vh;
+    width: 22vw;
+
+
+
+}
+
+.award {
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 1vw 0vw;
+}
+
+
+.icons>img {
+    width: 12vw;
+}
+
+.icons>p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+
+/* Footer*/
+footer {
+    text-align: center;
+    font-size: 1vw;
+    padding: 3vw;
+
+    color: aliceblue;
+    background-color: rgb(27, 27, 27);
+    bottom: 0;
+    position: relative;
+    width: 100vw;
+}
+
+/*Responsive*/
+@media screen and (min-width:360px) {
+
+    .logo {
+        width: 15vw;
+    }
+
+    .head-link {
+        font-size: 3.4vw;
+    }
+
+    .head-nav {
+        padding: 6vw 0vw;
+    }
+
+    .slide-show {
+        background-size: contain;
+
+    }
+
+
+    @keyframes slide {
+        0% {
+            background-image: url(images/slide-1.jpg);
+            width: 100vw;
+            height: 70vw;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+
+        20% {
+            background-image: url(images/slide-2.jpg);
+            width: 100vw;
+            height: 70vw;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        40% {
+            background-image: url(images/slide-3.jpg);
+            width: 100vw;
+            height: 70vw;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        60% {
+            background-image: url(images/slide-4.jpg);
+            width: 100vw;
+            height: 70vw;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        80% {
+            background-image: url(images/slide-5.jpg);
+            width: 100vw;
+            height: 70vw;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        100% {
+            background-image: url(images/slide-6.jpg);
+            width: 100vw;
+            height: 70vw;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+
+        }
+    }
+
+
+}
+
+/*Article*/
+
+.text>.heading {
+    font-size: 6vw;
+}
+
+.text {
+    margin: 4vw;
+    height: auto;
+}
+
+.text>p {
+    font-size: 4vw;
+}
+
+.icon-container {
+    display: block;
+    text-align: center;
+
+
+}
+
+.icons {
+    text-align: center;
+    margin: 15vw 5vw;
+    width: auto;
+
+}
+
+.award {
+
+    font-size: 6vw;
+
+}
+
+
+.icons>img {
+    width: 30vw;
+}
+
+.icons>p {
+    text-align: center;
+    font-size: 5vw;
+}
+
+
+/* Footer*/
+footer {
+    height: 20vw;
+    width: 95vw;
+}
+
+@media screen and (min-width:1000px) {
+
+    .logo {
+        width: 6vw;
+
+    }
+
+    .head-link {
+        font-size: 1.3vw;
+
+    }
+
+    .head-nav {
+
+        padding: 1vw 0vw;
+    }
+
+    /*slide-show*/
+    .slide-show {
+
+        background-size: cover;
+
+    }
+
+
+    @keyframes slide {
+        0% {
+            background-image: url(images/slide-1.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+
+        20% {
+            background-image: url(images/slide-2.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        40% {
+            background-image: url(images/slide-3.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        60% {
+            background-image: url(images/slide-4.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        80% {
+            background-image: url(images/slide-5.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        100% {
+            background-image: url(images/slide-6.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+    }
+
+    /*Article*/
+
+
+    .text {
+
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 8vw 10vw 0vw 10vw;
+        height: 100vh;
+    }
+
+    .text>p {
+        text-align: justify;
+        font-size: 1.3vw;
+    }
+
+    .text>.heading {
+        text-align: center;
+        font-size: 3vw
+    }
+
+    .parallax {
+        background-image: url(images/campus.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+    }
+
+    .icons {
+
+        margin: 20vh 7vh 0vh 7vh;
+        width: 22vw;
+    }
+
+    .award {
+
+        font-size: 2vw;
+
+    }
+
+
+    .icons>img {
+        width: 12vw;
+    }
+
+    .icons>p {
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    footer {
+        height: 3vw;
+        text-align: center;
+        width: 95vw;
+    }
+}

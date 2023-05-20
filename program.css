@@ -1,0 +1,222 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(226, 240, 234);
+    letter-spacing: 0.1vw;
+}
+
+/* Navigation Style */
+.logo {
+    width: 6vw;
+    position: absolute;
+    z-index: 3;
+    margin-left: 3vw;
+    margin-top: 0.8vw;
+    position: fixed;
+    box-shadow: .3vw .1vw .5vw .2vw rgba(0, 0, 0, 0.247);
+    border-radius: 100px;
+}
+
+.head-link {
+    position: relative;
+    display: inline-block;
+    font-size: 1.3vw;
+    text-decoration: none;
+    margin-left: 3vw;
+    color: rgb(19, 59, 26);
+    padding-bottom: .3vw;
+
+}
+
+a:hover {
+    color: rgb(59, 170, 109);
+    transform: translateY(-2px);
+    transition: all 0.4s ease-in-out;
+}
+
+.head-nav {
+
+    text-align: center;
+    position: fixed;
+    top: 0;
+    padding: 1vw 0vw;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    z-index: 2;
+}
+
+/*Buttons*/
+
+.button {
+
+    display: block;
+    text-align: center;
+    margin-top: 2vh;
+
+}
+
+.button>a {
+    text-decoration: none;
+    color: rgb(19, 59, 26);
+    font-size: 2.5vh;
+}
+
+.button>a:hover {
+    color: rgb(59, 170, 109);
+    transform: translateY(-2px);
+    transition: all 0.4s ease-in-out;
+}
+
+/*Specific buttons*/
+
+
+/*Flex-box*/
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 8vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.child-flex {
+    background-color: rgb(166, 228, 197);
+    margin: 20vh 7vh 0vh 7vh;
+    width: 22vw;
+    height: 95vh;
+    box-shadow: 1.2vw 1vw 0vw .2vw rgb(17, 17, 17);
+
+}
+
+.child-flex>img {
+
+    width: 22vw;
+    height: 40vh;
+    object-fit: cover;
+
+
+}
+
+h3 {
+    font-size: 2.8vh;
+}
+
+.description {
+    margin: 4vh;
+    font-size: 2.5vh;
+    width: 18vw;
+    height: 40vh;
+}
+
+
+/* Footer*/
+footer {
+    text-align: center;
+    font-size: 1vw;
+    padding: 3vw;
+    color: aliceblue;
+    background-color: rgb(27, 27, 27);
+    bottom: 0;
+    position: relative;
+    width: 100vw;
+}
+
+/*Responsive*/
+@media screen and (min-width:360px) {
+
+    .logo {
+        width: 15vw;
+    }
+
+    .head-link {
+        font-size: 3.4vw;
+    }
+
+    .head-nav {
+        padding: 6vw 0vw;
+    }
+
+    .flex-box {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .child-flex {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        box-shadow: none;
+    }
+
+    .child-flex>img {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .description {
+        margin: 0vw 5vw;
+        width: 90vw;
+    }
+
+    footer {
+        height: 20vw;
+        margin-top: 0;
+        width: 95vw;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .logo {
+        width: 6vw;
+
+    }
+
+    .head-link {
+        font-size: 1.3vw;
+
+    }
+
+    .head-nav {
+        padding: 1vw 0vw;
+    }
+
+
+    /*Flex-box*/
+
+    .flex-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-bottom: 8vw;
+    }
+
+    .child-flex {
+        margin: 20vh 7vh 0vh 7vh;
+        width: 22vw;
+        height: 95vh;
+        box-shadow: 1.2vw 1vw 0vw .2vw rgb(17, 17, 17);
+
+    }
+
+    .child-flex>img {
+
+        width: 22vw;
+        height: 40vh;
+
+    }
+
+    .description {
+        margin: 4vh;
+        width: 18vw;
+    }
+
+
+    /* Footer*/
+    footer {
+        width: 95vw;
+        height: 5vw;
+    }
+}

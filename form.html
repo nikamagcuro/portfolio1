@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="icon" href="images/logo.png" />
+  </head>
+
+  <body>
+    <div class="parent-nav">
+      <img src="images/logo.png" alt="school logo" class="logo" />
+      <div class="head-nav">
+        <a href="index.html" class="head-link">Home</a>
+        <a href="program.html" class="head-link">Programs</a>
+        <a href="about-us.html" class="head-link">About Us</a>
+      </div>
+    </div>
+
+    <div>
+      <form action="#">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <input
+            type="radio"
+            id="new"
+            name="status"
+            value="New Student"
+            required
+          />
+          <label for="new" class="new"> New Student / Transferee</label>
+          <input
+            type="radio"
+            id="old"
+            name="status"
+            value="Existing Student"
+            required
+          />
+          <label for="old" class="old"> Existing Student</label> <br />
+          <label for="lname">Lastname: </label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Please Enter Your Last Name"
+            required
+          />
+
+          <label for="fname">Firstname: </label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Please Enter Your First Name"
+            required
+          />
+
+          <label for="mname">Middlename: </label>
+          <input
+            type="text"
+            id="mname"
+            name="mname"
+            placeholder="Please Enter Your Middle Name"
+            required
+          />
+
+          <label for="age">Age: </label>
+          <input
+            type="number"
+            id="age"
+            placeholder="Please Enter Your Age"
+            required
+          />
+
+          <label for="bday">Birthdate: </label>
+          <input type="date" name="bday" id="bday" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Current Address</legend>
+          <label for="home-add">Home Number</label>
+          <input
+            type="text"
+            name="home-add"
+            id="home-add"
+            placeholder="Home No. / Street / Unit No."
+            required
+          />
+          <label for="subd">Village/Subdivision/Bldg.:</label>
+          <input
+            type="text"
+            name="subd"
+            id="subd"
+            placeholder=" Village / Subdivision / Bldg"
+            required
+          />
+
+          <label for="brgy">Barangay: </label>
+          <input
+            type="text"
+            name="brgy"
+            id="brgy"
+            placeholder="Please enter your Barangay"
+            required
+          />
+
+          <label for="city">City / Municipality</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Please enter your City"
+            required
+          />
+
+          <label for="prov">Province</label>
+          <input
+            type="text"
+            name="prov"
+            id="prov"
+            placeholder="Please enter your Province"
+            required
+          />
+
+          <label for="zip">Zip Code</label>
+          <input
+            type="number"
+            name="zip"
+            id="zip"
+            placeholder="✕✕✕✕✕"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Permanent Address</legend>
+          <label for="add" id="curr">Same as Current Address</label>
+          <input type="checkbox" name="add" id="add" required /> <br />
+          <label for="home-add">Home Number</label>
+          <input
+            type="text"
+            name="home-add"
+            id="home-add"
+            placeholder="Home No. / Street / Unit No."
+            required
+          />
+          <label for="subd">Village/Subdivision/Bldg.:</label>
+          <input
+            type="text"
+            name="subd"
+            id="subd"
+            placeholder=" Village / Subdivision / Bldg"
+            required
+          />
+
+          <label for="brgy">Barangay: </label>
+          <input
+            type="text"
+            name="brgy"
+            id="brgy"
+            placeholder="Please enter your Barangay"
+            required
+          />
+
+          <label for="city">City / Municipality</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Please enter your City"
+            required
+          />
+
+          <label for="prov">Province</label>
+          <input
+            type="text"
+            name="prov"
+            id="prov"
+            placeholder="Please enter your Province"
+            required
+          />
+
+          <label for="zip">Zip Code</label>
+          <input
+            type="number"
+            name="zip"
+            id="zip"
+            placeholder="✕✕✕✕✕"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Current / Last School Attended</legend>
+
+          <label for="type">School Type</label>
+          <select name="type" id="type" required>
+            <option value="Elementary">Elementary</option>
+            <option value="High School">High School</option>
+            <option value="Junior High School">Junio High School</option>
+            <option value="Senio High School">Senior High School</option>
+            <option value="ALS/Vocational">ALS/Vocational</option>
+            <option value="College">College</option>
+            <option value="Masteral">Masteral</option>
+            <option value="Doctoral">Doctoral</option>
+          </select>
+          <label for="school-name">School Name</label>
+          <input
+            type="text"
+            name="school-name"
+            id="school-name"
+            placeholder="Latest School"
+            required
+          />
+
+          <label for="prog">Program / Strand / Track </label>
+          <input
+            type="text"
+            name="prog"
+            id="prog"
+            placeholder="Latest Program / Track"
+            required
+          />
+
+          <label for="year">School Year Last Attended</label>
+          <input
+            type="number"
+            name="year"
+            id="year"
+            placeholder="Please Enter School Year "
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Guardian Information</legend>
+
+          <label for="lname">Lastname</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Please Enter Your Last Name"
+            required
+          />
+
+          <label for="fname">Firstname</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Please Enter Your First Name"
+            required
+          />
+
+          <label for="mname">Middlename</label>
+          <input
+            type="text"
+            id="mname"
+            name="mname"
+            placeholder="Please Enter Your Middle Name"
+            required
+          />
+
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Guardian's Age" required />
+        </fieldset>
+        <fieldset>
+          <legend>Guardian Permanent Address</legend>
+          <label for="add" id="curr">Same as Current Address</label>
+          <input type="checkbox" name="add" id="add" required /> <br />
+          <label for="home-add">Home Number</label>
+          <input
+            type="text"
+            name="home-add"
+            id="home-add"
+            placeholder="Home No. / Street / Unit No."
+            required
+          />
+          <label for="subd">Village/Subdivision/Bldg.:</label>
+          <input
+            type="text"
+            name="subd"
+            id="subd"
+            placeholder=" Village / Subdivision / Bldg"
+            required
+          />
+
+          <label for="brgy">Barangay: </label>
+          <input
+            type="text"
+            name="brgy"
+            id="brgy"
+            placeholder="Please enter your Barangay"
+            required
+          />
+
+          <label for="city">City / Municipality</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Please enter your City"
+            required
+          />
+
+          <label for="prov">Province</label>
+          <input
+            type="text"
+            name="prov"
+            id="prov"
+            placeholder="Please enter your Province"
+            required
+          />
+
+          <label for="zip">Zip Code</label>
+          <input
+            type="number"
+            name="zip"
+            id="zip"
+            placeholder="✕✕✕✕✕"
+            required
+          />
+        </fieldset>
+        <div class="button">
+          <input type="submit" id="btn" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
